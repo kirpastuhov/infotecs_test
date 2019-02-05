@@ -8,6 +8,10 @@ def homepage(request):
     return render(request=request, template_name="main/home.html", context={"name": name, "task": task})
 
 
+#  Handling GET and POST requests
+#  For POST request validate the form and return prime factorization of a given number.
+
+
 def test_task(request):
     result = []
     if request.method == 'POST':
@@ -20,8 +24,7 @@ def test_task(request):
     return render(request, "main/test_task.html", context={"form": form})
 
 
-#  Handling GET and POST requests
-#  For POST request validate the form and return prime factorization of a given number.
+#  Function for computing prime factorization of a  given number
 
 
 def primfacs(n):
@@ -36,6 +39,3 @@ def primfacs(n):
         primfac.append(int(n))
 
     return primfac
-
-
-#  Function for computing prime factorization of a  given number
