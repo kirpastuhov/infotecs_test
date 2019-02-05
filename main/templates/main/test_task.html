@@ -1,0 +1,21 @@
+{% extends "main/header.html" %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+
+        <button type="submit" class="btn">Send</button>
+    </form>
+
+    {% if result %}
+
+     <ul class="collection with-header" style="text-align:center">
+        <li class="collection-header"><h4>Prime factorization of {{value}}</h4></li>
+        {% for r in result %}
+            <li class="collection-item">{{r}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+{% endblock %}
