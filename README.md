@@ -5,6 +5,10 @@ Simple web application for computing prime factors of a number.
 
 ## Getting Started
 
+Get yourself a copy of the project with the command
+```
+git clone https://github.com/kirpastuhov/infotecs_test.git
+```
 
 ### Prerequisites
 
