@@ -31,10 +31,14 @@ docker-compose down
 ```
 ###  Run the project without Docker:
 In the project directory run:
-``` python manage.py runserver ```
+```
+python manage.py runserver
+```
 
 To stop application use press CTRL+C
 ## Running the tests
 
 Run this command to run some simple tests:
-``` python manage.py test main ```
+```
+python manage.py test main
+```
